@@ -1,13 +1,20 @@
+<<<<<<< HEAD
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ToastController } from 'ionic-angular';
 import { Camera, CameraOptions } from '@ionic-native/camera'; 
 declare var google:any;
+=======
+import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
+
+>>>>>>> c2d1aeb10b0ecb5df9ebf2798e9a98797e8c6a43
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
+<<<<<<< HEAD
   @ViewChild('map')mapRef:ElementRef;
   @ViewChild('boton')botonRef:ElementRef;
   image: string = null;
@@ -96,5 +103,11 @@ export class HomePage {
   
 
 
+=======
+
+  constructor(public navCtrl: NavController) {
+
+  }
+>>>>>>> c2d1aeb10b0ecb5df9ebf2798e9a98797e8c6a43
 
 }
