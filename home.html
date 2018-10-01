@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Image Gallery</ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content>
+  <ion-slides>
+    <ion-slide (click)="Confirmacion(1)">
+      <img [src]="imagen1" *ngIf="imagen1" />
+      <h1>{{imagen1Text}}</h1>
+    </ion-slide>
+    <ion-slide (click)="Confirmacion(2)">
+        <img [src]="imagen2" *ngIf="imagen2" />
+        <h1>{{imagen2Text}}</h1>
+    </ion-slide>
+    <ion-slide (click)="Confirmacion(3)"> 
+        <img [src]="imagen3" *ngIf="imagen3" />
+        <h1>{{imagen3Text}}</h1>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
