@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "226772164225",
+    "firebase_url": "https://empapthy-firebase.firebaseio.com",
+    "project_id": "empapthy-firebase",
+    "storage_bucket": "empapthy-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226772164225:android:6856be8c27d34f2e",
+        "android_client_info": {
+          "package_name": "com.soft02.empathy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226772164225-4fa6r023erh9aum8mihb6afr879agt6b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.soft02.empathy",
+            "certificate_hash": "d5a26bc8d0568d8e0d8dc3e68d8e5eb994e69727"
+          }
+        },
+        {
+          "client_id": "226772164225-3inootcja60tsluaca89m0ic3bu08r36.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBI3ARd1oCbXQavNM13nc8590qIpAXzM70"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "226772164225-3inootcja60tsluaca89m0ic3bu08r36.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

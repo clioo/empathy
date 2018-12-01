@@ -1,0 +1,20 @@
+<ion-header>
+    <ion-navbar color="dark">
+        
+        <ion-searchbar placeholder="Buscar" animated="true">
+          </ion-searchbar>
+    
+        <ion-buttons end>
+            <button (click)="openLoginPage()" icon-only="" ion-button="" class="disable-hover bar-button bar-button-ios bar-button-default bar-button-default-ios"><span class="button-inner">
+                <ion-icon *ngIf="!loggeado" name="contact" role="img" class="icon icon-ios ion-ios-contact" aria-label="contact"></ion-icon>
+              </span><div class="button-effect"></div></button>
+        </ion-buttons>
+      </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <div #map id="map">
+      
+    </div>
+</ion-content>
+

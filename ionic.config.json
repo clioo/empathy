@@ -1,0 +1,7 @@
+{
+  "name": "empathyy",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

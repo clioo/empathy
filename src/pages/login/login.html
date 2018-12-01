@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+
+</ion-navbar>
+</ion-header>
+
+
+<ion-content padding text-center>
+    <ion-grid>
+        <ion-row>
+          <ion-col class="top-5">
+            <img id="logo"  src="./assets/imgs/app-logo.png" alt="">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="top-20">
+            <h3>Iniciar sesión</h3>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="top-20">
+            <button  id="logout" (click)="signInWithFacebook()" ion-button color="facebook" icon-left block round>
+                <ion-icon name="logo-facebook"></ion-icon>
+                Iniciar con Facebook
+              </button>
+
+
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+</ion-content>

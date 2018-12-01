@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Contact
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="top-5">
+          <img id="logo"  src="./assets/imgs/app-logo.png" alt="">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="top-20">
+        <button *ngIf="loggeado" ion-button icon-left block round color="light">
+          <ion-icon name="happy">Tus eventos</ion-icon>
+        </button>
+      <button *ngIf="loggeado" ion-button icon-left block round color="light">
+          <ion-icon name="list-box"> Historial de asistencia/canjeo</ion-icon>
+        </button>
+      <button *ngIf="loggeado" ion-button icon-left block round color="light">
+          <ion-icon name="qr-scanner"> Generar código QR</ion-icon>
+        </button>
+      <button *ngIf="loggeado" ion-button icon-left block round color="light">
+        <ion-icon name="contact">Editar perfil</ion-icon>
+      </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col class="top-20">
+            <button *ngIf="loggeado" (click)="logout()" ion-button icon-left block round color="danger">
+                <ion-icon name="exit"></ion-icon>Cerrar sesión</button>
+                <button *ngIf="!loggeado" (click)="login()" ion-button icon-left block round color="light">
+                <ion-icon name="log-in"></ion-icon>Iniciar sesión</button>
+        </ion-col>
+
+      </ion-row>
+  </ion-grid>
+</ion-content>
