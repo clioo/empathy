@@ -5,8 +5,8 @@
           </ion-searchbar>
     
         <ion-buttons end>
-            <button (click)="openLoginPage()" icon-only="" ion-button="" class="disable-hover bar-button bar-button-ios bar-button-default bar-button-default-ios"><span class="button-inner">
-                <ion-icon *ngIf="!loggeado" name="contact" role="img" class="icon icon-ios ion-ios-contact" aria-label="contact"></ion-icon>
+            <button *ngIf="!loggeado" (click)="openLoginPage()" icon-only="" ion-button="" class="disable-hover bar-button bar-button-ios bar-button-default bar-button-default-ios"><span class="button-inner">
+                <ion-icon  name="contact" role="img" class="icon icon-ios ion-ios-contact" aria-label="contact"></ion-icon>
               </span><div class="button-effect"></div></button>
         </ion-buttons>
       </ion-navbar>

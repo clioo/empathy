@@ -13,4 +13,19 @@ page-about {
         background: linear-gradient(to bottom, #7d7e7d 0%,#0e0e0e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
     }
+    #carouselExampleControls{
+        width: 100%;
+        height: 80%;
+        justify-content: center;
+    }
+    .carousel-inner{
+        width: 100%;
+        height: 100%;
+    }
+    .carousel-item{
+        height: 100%;
+    }
+    img{
+        height: 100%;
+    }
 }

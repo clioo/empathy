@@ -7,5 +7,30 @@
 </ion-header>
 
 <ion-content padding>
-  
+    <div *ngFor="let evento of eventos" class="card mt-2" style="width: 100%;">
+            <div id="carouselExampleControls" class=" carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div *ngFor="let imagen of evento.Imagenes; let i = index" [ngClass]="{'active': i == 0}" class="carousel-item">
+                    <img class="d-block w-100" [src]="imagen | imagen:files" alt="First slide">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        <div class="card-body">
+          <h5 class="card-title">{{evento.Titulo}}</h5>
+          <p class="card-text">{{evento.Descripcion}}</p>
+        </div>
+        <div class="card-body">
+            <button (click)="abrirEvento(evento)" ion-button icon-left block round color="dark">
+                <ion-icon name="arrow-round-forward"> Abrir evento</ion-icon>
+              </button>
+        </div>
+      </div>
 </ion-content>

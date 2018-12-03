@@ -1,0 +1,42 @@
+<!--
+  Generated template for the EventoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{evento.Titulo}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div id="carouselExampleControls" class=" carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div *ngFor="let imagen of imagenes; let i = index" [ngClass]="{'active': i == 0}" class="carousel-item">
+        <img class="d-block w-100" [src]="imagen" alt="First slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <div class="container mt-4">
+    <h3 class="text-align-center">{{evento.Descripcion}}</h3>
+    <div class="justify-content-center d-flex">
+      <ngx-qrcode *ngIf="link != ''" qrc-value="{{link}}"></ngx-qrcode>
+    </div>
+    
+
+
+    <a ion-button icon-left block round color="light" [href]="linkMapa"><ion-icon name="map"></ion-icon></a>
+  </div>
+</ion-content>

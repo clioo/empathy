@@ -7,12 +7,21 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>profile</ion-title>
+    <ion-title>Perfil</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <div class="container justify-content-center d-flex">
+      <img [src]="fotoUsuario" alt="">
 
+  </div>
+  <h3>{{usuarioHeroku.Nombres}}</h3>
+  <ion-item color="dark">
+      <ion-label floating>Teléfono</ion-label>
+      <ion-input maxLength="10" required [(ngModel)]="telefono" name="titulo" type="number"></ion-input>
+    </ion-item>
+  <button (click)="cambiarNumero()" type="button" ion-button block color="dark">Guardar teléfono</button>
 </ion-content>

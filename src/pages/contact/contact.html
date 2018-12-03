@@ -15,16 +15,13 @@
     </ion-row>
     <ion-row>
       <ion-col class="top-20">
-        <button *ngIf="loggeado" ion-button icon-left block round color="light">
-          <ion-icon name="happy">Tus eventos</ion-icon>
-        </button>
-      <button *ngIf="loggeado" ion-button icon-left block round color="light">
+      <button *ngIf="loggeado" (click)="historialAsistenciaCanjeo()" ion-button icon-left block round color="light">
           <ion-icon name="list-box"> Historial de asistencia/canjeo</ion-icon>
         </button>
-      <button *ngIf="loggeado" ion-button icon-left block round color="light">
+      <button (click)="generarQR()" *ngIf="loggeado" ion-button icon-left block round color="light">
           <ion-icon name="qr-scanner"> Generar código QR</ion-icon>
         </button>
-      <button *ngIf="loggeado" ion-button icon-left block round color="light">
+      <button (click)="abrirPerfil()" *ngIf="loggeado" ion-button icon-left block round color="light">
         <ion-icon name="contact">Editar perfil</ion-icon>
       </button>
       </ion-col>
